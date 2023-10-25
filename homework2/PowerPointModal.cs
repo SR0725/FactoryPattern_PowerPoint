@@ -8,6 +8,13 @@ namespace homework2
 {
     public class PowerPointModal
     {
+
+        public delegate void ModelChangedEventHandler();
+        public event ModelChangedEventHandler _modelChanged;
+        private Shape _workShape;
+        private double _firstPointX;
+        private double _firstPointY;
+
         // shapes
         public List<Shape> _shapes
         {
@@ -29,15 +36,8 @@ namespace homework2
             {
                 return null;
             }
-
-            int positionX1 = 0;
-            int positionY1 = 0;
-            int positionX2 = 0;
-            int positionY2 = 0;
-            Utility.GetRandomPosition(ref positionX1, ref positionY1, ref positionX2, ref positionY2);
-            shape.SetPosition(positionX1, positionY1, positionX2, positionY2);
-
             _shapes.Add(shape);
+            NotifyModelChanged();
             return shape;
         }
 
@@ -50,8 +50,71 @@ namespace homework2
             }
 
             _shapes.RemoveAt(index);
+            NotifyModelChanged();
             return true;
         }
 
+        // add new shape when pointer pressed
+        public Shape AddWorkPaintShape(ShapeFactory.ShapeType shapeType, double positionX, double positionY)
+        {
+            _workShape = AddShape(shapeType);
+            _workShape.SetPosition((int)_firstPointX, (int)_firstPointY, (int)positionX, (int)positionY);
+            _firstPointX = positionX;
+            _firstPointY = positionY;
+            NotifyModelChanged();
+            return _workShape;
+        }
+
+        // set new shape when pointer move
+        public Shape MoveWorkPaintShape(double positionX, double positionY)
+        {
+            if (_workShape == null)
+            {
+                return null;
+            }
+
+            _workShape.SetPosition(
+                (int)_firstPointX,
+                (int)_firstPointY,
+                (int)positionX,
+                (int)positionY
+            );
+            NotifyModelChanged();
+            return _workShape;
+        }
+
+        // finish new shape when pointer move
+        public Shape FinishWorkPaintShape(double positionX, double positionY)
+        {
+            _workShape.SetPosition(
+                (int)_firstPointX,
+                (int)_firstPointY,
+                (int)positionX,
+                (int)positionY
+            );
+            _workShape = null;
+            NotifyModelChanged();
+            return _workShape;
+        }
+
+        // get is adding new shape
+        public bool IsAddingNewShape()
+        {
+            if (_workShape == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        // notify model changed
+        public void NotifyModelChanged()
+        {
+            if (_modelChanged != null)
+                _modelChanged();
+        }
     }
 }

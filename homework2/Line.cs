@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace homework2
 {
@@ -15,10 +16,11 @@ namespace homework2
         private int _positionY2;
 
         // constructor
-        public Line()
+        public Line(int positionX1, int positionY1, int positionX2, int positionY2)
         {
             const string SHAPE_NAME = "線";
             _shapeName = SHAPE_NAME;
+            SetPosition(positionX1, positionY1, positionX2, positionY2);
         }
 
         // set position
@@ -41,6 +43,12 @@ namespace homework2
         public override string GetShapeName()
         {
             return _shapeName;
+        }
+
+        // draw
+        public override void Draw(IGraphics graphics)
+        {
+            graphics.DrawLine(_positionX1, _positionY1, _positionX2, _positionY2);
         }
     }
 }

@@ -16,7 +16,10 @@ namespace homework2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(new PowerPointModal()));
+            PowerPointModal powerPointModal = new PowerPointModal();
+            PresentationModel presentationModel = new PresentationModel(powerPointModal);
+            Form1 view = new Form1(powerPointModal, presentationModel);
+            Application.Run(view);
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace homework2
 {
-    class Rectangle : Shape
+    class Circle : Shape
     {
         private int _positionX1;
         private int _positionY1;
@@ -16,9 +16,9 @@ namespace homework2
         private int _positionY2;
 
         // constructor
-        public Rectangle(int positionX1, int positionY1, int positionX2, int positionY2)
+        public Circle(int positionX1, int positionY1, int positionX2, int positionY2)
         {
-            const string SHAPE_NAME = "矩形";
+            const string SHAPE_NAME = "圓形";
             _shapeName = SHAPE_NAME;
             SetPosition(positionX1, positionY1, positionX2, positionY2);
         }
@@ -53,7 +53,7 @@ namespace homework2
             int positionX = Math.Min(_positionX1, _positionX2);
             int positionY = Math.Min(_positionY1, _positionY2);
 
-            graphics.DrawRectangle(positionX, positionY, width, height);
+            graphics.DrawEllipse(positionX, positionY, width, height);
         }
     }
 }

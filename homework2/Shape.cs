@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace homework2
 {
@@ -18,5 +19,8 @@ namespace homework2
 
         // get shape name
         public abstract string GetShapeName();
+
+        // render
+        public abstract void Draw(IGraphics graphics);
     }
 }
