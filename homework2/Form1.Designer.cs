@@ -32,7 +32,7 @@ namespace homework2
             this._slideSelectionArea = new System.Windows.Forms.Panel();
             this._slider2 = new System.Windows.Forms.Button();
             this._slider1 = new System.Windows.Forms.Button();
-            this._renderPanel = new DoubleBufferedPanel();
+            this._renderPanel = new homework2.DoubleBufferedPanel();
             this._slideInfoArea = new System.Windows.Forms.GroupBox();
             this._addNewShapeSelector = new System.Windows.Forms.ComboBox();
             this._addNewShapeButton = new System.Windows.Forms.Button();
@@ -49,6 +49,7 @@ namespace homework2
             this._lineToolStripButton = new System.Windows.Forms.ToolStripButton();
             this._rectangleToolStripButton = new System.Windows.Forms.ToolStripButton();
             this._circleToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this._arrowToolStripButton = new System.Windows.Forms.ToolStripButton();
             this._slideSelectionArea.SuspendLayout();
             this._slideInfoArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._shapesDataGridView)).BeginInit();
@@ -91,11 +92,11 @@ namespace homework2
             this._renderPanel.Size = new System.Drawing.Size(1009, 674);
             this._renderPanel.TabIndex = 4;
             this._renderPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HandleCanvasPaint);
-            this._renderPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HandlePaintPointerDown);
+            this._renderPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HandleMouseDown);
             this._renderPanel.MouseEnter += new System.EventHandler(this.HandleRenderPanelMouseEnter);
             this._renderPanel.MouseLeave += new System.EventHandler(this.HandleRenderPanelMouseLeave);
-            this._renderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HandlePaintPointerMove);
-            this._renderPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.HandlePaintPointerUp);
+            this._renderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HandleMouseMove);
+            this._renderPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.HandleMouseUp);
             // 
             // _slideInfoArea
             // 
@@ -219,7 +220,8 @@ namespace homework2
             this._toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._lineToolStripButton,
             this._rectangleToolStripButton,
-            this._circleToolStripButton});
+            this._circleToolStripButton,
+            this._arrowToolStripButton});
             this._toolStrip.Location = new System.Drawing.Point(0, 0);
             this._toolStrip.Name = "_toolStrip";
             this._toolStrip.Size = new System.Drawing.Size(1445, 25);
@@ -253,6 +255,16 @@ namespace homework2
             this._circleToolStripButton.Size = new System.Drawing.Size(23, 22);
             this._circleToolStripButton.Click += new System.EventHandler(this.HandleCircleToolStripButtonClick);
             // 
+            // _arrowToolStripButton
+            // 
+            this._arrowToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._arrowToolStripButton.Image = global::homework2.Properties.Resources.arrow;
+            this._arrowToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._arrowToolStripButton.Name = "_arrowToolStripButton";
+            this._arrowToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this._arrowToolStripButton.Text = "toolStripButton1";
+            this._arrowToolStripButton.Click += new System.EventHandler(this.HandleArrowToolStripButtonClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -266,6 +278,8 @@ namespace homework2
             this.MainMenuStrip = this._headMenu;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyPreview = true;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HandleKeyDown);
             this._slideSelectionArea.ResumeLayout(false);
             this._slideInfoArea.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._shapesDataGridView)).EndInit();
@@ -302,6 +316,7 @@ namespace homework2
         private System.Windows.Forms.ToolStripButton _lineToolStripButton;
         private System.Windows.Forms.ToolStripButton _rectangleToolStripButton;
         private System.Windows.Forms.ToolStripButton _circleToolStripButton;
+        private System.Windows.Forms.ToolStripButton _arrowToolStripButton;
     }
 }
 

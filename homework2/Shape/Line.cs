@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
 
 namespace homework2
 {
@@ -32,6 +27,15 @@ namespace homework2
             _positionY2 = positionY2;
         }
 
+        // get position
+        public override void GetPosition(ref int positionX1, ref int positionY1, ref int positionX2, ref int positionY2)
+        {
+            positionX1 = _positionX1;
+            positionX2 = _positionX2;
+            positionY1 = _positionY1;
+            positionY2 = _positionY2;
+        }
+
         // get Position String Info 
         public override string GetInfo()
         {
@@ -49,6 +53,25 @@ namespace homework2
         public override void Draw(IGraphics graphics)
         {
             graphics.DrawLine(_positionX1, _positionY1, _positionX2, _positionY2);
+        }
+
+        // DrawSelectedBorder
+        public override void DrawSelectedBorder(IGraphics graphics)
+        {
+            graphics.DrawSelectedBorder(_positionX1, _positionY1, _positionX2, _positionY2);
+        }
+
+
+        // IsPointInsideShape
+        public override bool IsPointInsideShape(double positionX, double positionY)
+        {
+            double lineLength = Math.Sqrt(Math.Pow(_positionX2 - _positionX1, 2) + Math.Pow(_positionY2 - _positionY1, 2));
+
+            double distanceToFirstPoint = Math.Sqrt(Math.Pow(positionX - _positionX1, 2) + Math.Pow(positionY - _positionY1, 2));
+            double distanceToSecondPoint = Math.Sqrt(Math.Pow(positionX - _positionX2, 2) + Math.Pow(positionY - _positionY2, 2));
+
+            double epsilon = 1e-6; 
+            return Math.Abs(distanceToFirstPoint + distanceToSecondPoint - lineLength) < epsilon;
         }
     }
 }

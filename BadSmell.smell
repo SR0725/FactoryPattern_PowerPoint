@@ -185,7 +185,1544 @@
     <div class="data">
       <Data id="ReviewPalData">
         <CodeReview xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-          <Reviews />
+          <Reviews>
+            <Smell>
+              <Id>1</Id>
+              <SmellType>Literal constants(字面常數)-2.0</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2.0</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Circle.cs</File>
+              <Line>77</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>2</Id>
+              <SmellType>Literal constants(字面常數)-2.0</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2.0</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Circle.cs</File>
+              <Line>78</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>3</Id>
+              <SmellType>Literal constants(字面常數)-2.0</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2.0</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Circle.cs</File>
+              <Line>80</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>4</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Circle.cs</File>
+              <Line>80</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>5</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Circle.cs</File>
+              <Line>80</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>6</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Circle.cs</File>
+              <Line>82</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>7</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Circle.cs</File>
+              <Line>82</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>8</Id>
+              <SmellType>ICS(空白與空行-3)</SmellType>
+              <HashCode>SpacingAndNewLine3</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>129</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-3) for, foreach, while, switch, if 等關鍵字與左括號之間加一個空白</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>9</Id>
+              <SmellType>ICS(空白與空行-17)</SmellType>
+              <HashCode>SpacingAndNewLine17.IState.cs.2.    }.    class PointState : IState</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>90</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-17) 一次不加多個空行(若發生時，則指定在多個空行的第一行即可)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>10</Id>
+              <SmellType>ICS(類別宣告-4)</SmellType>
+              <HashCode>ClassDeclaration4.homework2.IContext.4</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>9</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(類別宣告-4) 一個 file 只能有一個 class</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>11</Id>
+              <SmellType>ICS(類別宣告-4)</SmellType>
+              <HashCode>ClassDeclaration4.homework2.IState.4</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>41</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(類別宣告-4) 一個 file 只能有一個 class</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>12</Id>
+              <SmellType>ICS(類別宣告-4)</SmellType>
+              <HashCode>ClassDeclaration4.homework2.DrawingState.4</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>55</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(類別宣告-4) 一個 file 只能有一個 class</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>13</Id>
+              <SmellType>ICS(類別宣告-4)</SmellType>
+              <HashCode>ClassDeclaration4.homework2.PointState.4</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>92</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(類別宣告-4) 一個 file 只能有一個 class</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>14</Id>
+              <SmellType>ICS(函式-2)</SmellType>
+              <HashCode>Method2.IContext.TransitionTo</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>19</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(函式-2) 每個函式表示一種操作，因此一律使用動詞做為第一個單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>15</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.IContext.HandleMouseDown.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>25</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>16</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.IContext.HandleMouseMove.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>30</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>17</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.IContext.HandleMouseUp.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>35</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>18</Id>
+              <SmellType>ICS(空白與空行-16)</SmellType>
+              <HashCode>SpacingAndNewLine16.IState.HandleMouseMove.0</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>51</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-16) 每個函式之間加一個空行</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>19</Id>
+              <SmellType>ICS(空白與空行-16)</SmellType>
+              <HashCode>SpacingAndNewLine16.IState.HandleMouseUp.0</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>52</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-16) 每個函式之間加一個空行</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>20</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.IState.HandleMouseDown.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>50</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>21</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.IState.HandleMouseMove.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>51</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>22</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.IState.HandleMouseUp.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>52</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>23</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.DrawingState.HandleMouseDown.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>59</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>24</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.DrawingState.HandleMouseMove.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>69</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>25</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.DrawingState.HandleMouseUp.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>80</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>26</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PointState.isMouseDown</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>94</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>27</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PointState.originMousePositionX</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>95</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>28</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PointState.originMousePositionY</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>96</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>29</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PointState.originShapePositionX1</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>97</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>30</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PointState.originShapePositionY1</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>98</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>31</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PointState.originShapePositionX2</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>99</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>32</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PointState.originShapePositionY2</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>100</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>33</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PointState.HandleMouseDown.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>103</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>34</Id>
+              <SmellType>Long method(過長函式)</SmellType>
+              <HashCode>LongMethod.PointState.HandleMouseDown.22PowerPointModal powerPointModal;Toolbar toolbar;double positionX;double positionY;</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>22</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>103</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>35</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PointState.HandleMouseMove.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>127</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>36</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PointState.HandleMouseUp.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>147</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>37</Id>
+              <SmellType>ICS(空白與空行-17)</SmellType>
+              <HashCode>SpacingAndNewLine17.Line.cs.2.        }.        // IsPointInsideShape</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>63</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-17) 一次不加多個空行(若發生時，則指定在多個空行的第一行即可)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>38</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>68</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>39</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>68</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>40</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>70</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>41</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>70</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>42</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>71</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>43</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>71</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>44</Id>
+              <SmellType>Literal constants(字面常數)-1e-6</SmellType>
+              <HashCode>LiteralConstants.IsPointInsideShape.1e-6</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>73</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>45</Id>
+              <SmellType>ICS(空白與空行-16)</SmellType>
+              <HashCode>SpacingAndNewLine16.Line.IsPointInsideShape.2</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>66</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-16) 每個函式之間加一個空行</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>46</Id>
+              <SmellType>Unsuitable naming(名不符實)-epsilon(epsilon)</SmellType>
+              <HashCode>UnsuitableNaming.Line.IsPointInsideShape.epsilon</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Line.cs</File>
+              <Line>73</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>47</Id>
+              <SmellType>ICS(類別宣告-1)</SmellType>
+              <HashCode>ClassDeclaration1.PowerPointModal._selectedShape</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PowerPointModal.cs</File>
+              <Line>13</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(類別宣告-1) 除非為類別常數(static class constants)，成員變數請勿宣告為 public</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>48</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PowerPointModal.context</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PowerPointModal.cs</File>
+              <Line>17</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>49</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PowerPointModal.HandleChangeContext.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PowerPointModal.cs</File>
+              <Line>59</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>50</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PowerPointModal.HandleMouseDown.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PowerPointModal.cs</File>
+              <Line>75</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>51</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PowerPointModal.HandleMouseMove.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PowerPointModal.cs</File>
+              <Line>81</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>52</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PowerPointModal.HandleMouseUp.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PowerPointModal.cs</File>
+              <Line>87</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>53</Id>
+              <SmellType>ICS(空白與空行-3)</SmellType>
+              <HashCode>SpacingAndNewLine3</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PresentationModel.cs</File>
+              <Line>55</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-3) for, foreach, while, switch, if 等關鍵字與左括號之間加一個空白</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>54</Id>
+              <SmellType>ICS(縮排與換行-1)</SmellType>
+              <HashCode>IndentAndNewLine1.HandleMouseDown.        public Shape HandleMouseDown(double positionX, double positionY) {</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PresentationModel.cs</File>
+              <Line>62</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>55</Id>
+              <SmellType>ICS(縮排與換行-2)</SmellType>
+              <HashCode>IndentAndNewLine2.HandleMouseDown.        }</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PresentationModel.cs</File>
+              <Line>64</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(縮排與換行-2) 右大括號一律換行-並與左大括號對齊</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>56</Id>
+              <SmellType>Unsuitable naming(名不符實)-toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PresentationModel.toolbar.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PresentationModel.cs</File>
+              <Line>8</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>57</Id>
+              <SmellType>ICS(變數-1)</SmellType>
+              <HashCode>Variable1.PresentationModel.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PresentationModel.cs</File>
+              <Line>8</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>58</Id>
+              <SmellType>ICS(類別宣告-1)</SmellType>
+              <HashCode>ClassDeclaration1.PresentationModel.toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PresentationModel.cs</File>
+              <Line>8</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(類別宣告-1) 除非為類別常數(static class constants)，成員變數請勿宣告為 public</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>59</Id>
+              <SmellType>Unsuitable naming(名不符實)-SetToolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.PresentationModel.SetToolbar.SetToolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>PresentationModel.cs</File>
+              <Line>17</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>60</Id>
+              <SmellType>ICS(空白與空行-17)</SmellType>
+              <HashCode>SpacingAndNewLine17.Rectangle.cs.2.        }.        // DrawSelectedBorder</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Rectangle.cs</File>
+              <Line>67</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-17) 一次不加多個空行(若發生時，則指定在多個空行的第一行即可)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>61</Id>
+              <SmellType>ICS(空白與空行-16)</SmellType>
+              <HashCode>SpacingAndNewLine16.Rectangle.DrawSelectedBorder.2</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Rectangle.cs</File>
+              <Line>70</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-16) 每個函式之間加一個空行</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>62</Id>
+              <SmellType>ICS(縮排與換行-1)</SmellType>
+              <HashCode>IndentAndNewLine1.get.            get { return this._checkedType; }</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Toolbar.cs</File>
+              <Line>29</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>63</Id>
+              <SmellType>ICS(縮排與換行-2)</SmellType>
+              <HashCode>IndentAndNewLine2.get.            get { return this._checkedType; }</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Toolbar.cs</File>
+              <Line>29</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(縮排與換行-2) 右大括號一律換行-並與左大括號對齊</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>64</Id>
+              <SmellType>ICS(縮排與換行-3)</SmellType>
+              <HashCode>IndentAndNewLine3.get.            get { return this._checkedType; }</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Toolbar.cs</File>
+              <Line>29</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>65</Id>
+              <SmellType>Literal constants(字面常數)-"ButtonCheck"</SmellType>
+              <HashCode>LiteralConstants.set."ButtonCheck"</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Toolbar.cs</File>
+              <Line>33</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>66</Id>
+              <SmellType>Unsuitable naming(名不符實)-Toolbar(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.homework2.Toolbar.Toolbar</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Toolbar.cs</File>
+              <Line>5</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>67</Id>
+              <SmellType>Unsuitable naming(名不符實)-ToolbarType(toolbar)</SmellType>
+              <HashCode>UnsuitableNaming.Toolbar.ToolbarType.ToolbarType</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Toolbar.cs</File>
+              <Line>13</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>68</Id>
+              <SmellType>ICS(列舉enum-3)</SmellType>
+              <HashCode>Enum3.ToolbarType.PointState</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>Toolbar.cs</File>
+              <Line>19</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(列舉enum-3) 最後一個項目不用加逗號。</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>69</Id>
+              <SmellType>Literal constants(字面常數)-2.0f</SmellType>
+              <HashCode>LiteralConstants.DrawSelectedBorder.2.0f</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>WindowsFormsGraphicsAdaptor.cs</File>
+              <Line>43</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>70</Id>
+              <SmellType>Literal constants(字面常數)-2.0f</SmellType>
+              <HashCode>LiteralConstants.DrawSelectedBorder.2.0f</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>WindowsFormsGraphicsAdaptor.cs</File>
+              <Line>43</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>71</Id>
+              <SmellType>Literal constants(字面常數)-2.0f</SmellType>
+              <HashCode>LiteralConstants.DrawSelectedBorder.2.0f</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>WindowsFormsGraphicsAdaptor.cs</File>
+              <Line>44</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>72</Id>
+              <SmellType>Literal constants(字面常數)-2.0f</SmellType>
+              <HashCode>LiteralConstants.DrawSelectedBorder.2.0f</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>WindowsFormsGraphicsAdaptor.cs</File>
+              <Line>44</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>73</Id>
+              <SmellType>Literal constants(字面常數)-2.0f</SmellType>
+              <HashCode>LiteralConstants.DrawSelectedBorder.2.0f</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>WindowsFormsGraphicsAdaptor.cs</File>
+              <Line>45</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>74</Id>
+              <SmellType>Literal constants(字面常數)-2.0f</SmellType>
+              <HashCode>LiteralConstants.DrawSelectedBorder.2.0f</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>WindowsFormsGraphicsAdaptor.cs</File>
+              <Line>45</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>75</Id>
+              <SmellType>Literal constants(字面常數)-2.0f</SmellType>
+              <HashCode>LiteralConstants.DrawSelectedBorder.2.0f</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>WindowsFormsGraphicsAdaptor.cs</File>
+              <Line>46</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>76</Id>
+              <SmellType>Literal constants(字面常數)-2.0f</SmellType>
+              <HashCode>LiteralConstants.DrawSelectedBorder.2.0f</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>WindowsFormsGraphicsAdaptor.cs</File>
+              <Line>46</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>77</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 TransitionTo 缺乏註解</SmellType>
+              <HashCode>homework2\homework2.IState.cs.Unresolved warnings(忽視警告)-函式 TransitionTo 缺乏註解.19</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2\homework2</Project>
+              <File>IState.cs</File>
+              <Line>19</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>78</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 HandleMouseDown 缺乏註解</SmellType>
+              <HashCode>homework2\homework2.IState.cs.Unresolved warnings(忽視警告)-函式 HandleMouseDown 缺乏註解.25</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2\homework2</Project>
+              <File>IState.cs</File>
+              <Line>25</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>79</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 HandleMouseMove 缺乏註解</SmellType>
+              <HashCode>homework2\homework2.IState.cs.Unresolved warnings(忽視警告)-函式 HandleMouseMove 缺乏註解.30</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2\homework2</Project>
+              <File>IState.cs</File>
+              <Line>30</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>80</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 HandleMouseUp 缺乏註解</SmellType>
+              <HashCode>homework2\homework2.IState.cs.Unresolved warnings(忽視警告)-函式 HandleMouseUp 缺乏註解.35</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2\homework2</Project>
+              <File>IState.cs</File>
+              <Line>35</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>81</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 SetContext 缺乏註解</SmellType>
+              <HashCode>homework2\homework2.IState.cs.Unresolved warnings(忽視警告)-函式 SetContext 缺乏註解.45</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2\homework2</Project>
+              <File>IState.cs</File>
+              <Line>45</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>82</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 HandleMouseDown 缺乏註解</SmellType>
+              <HashCode>homework2\homework2.IState.cs.Unresolved warnings(忽視警告)-函式 HandleMouseDown 缺乏註解.50</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2\homework2</Project>
+              <File>IState.cs</File>
+              <Line>50</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>83</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 HandleMouseMove 缺乏註解</SmellType>
+              <HashCode>homework2\homework2.IState.cs.Unresolved warnings(忽視警告)-函式 HandleMouseMove 缺乏註解.51</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2\homework2</Project>
+              <File>IState.cs</File>
+              <Line>51</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>84</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 HandleMouseUp 缺乏註解</SmellType>
+              <HashCode>homework2\homework2.IState.cs.Unresolved warnings(忽視警告)-函式 HandleMouseUp 缺乏註解.52</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2\homework2</Project>
+              <File>IState.cs</File>
+              <Line>52</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>85</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>19 homework2.IContext.TransitionTo(homework2.IState)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>19</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>homework2.IContext.TransitionTo(homework2.IState)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>86</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>25 homework2.IContext.HandleMouseDown(homework2.PowerPointModal, homework2.Toolbar, double, double)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>25</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>homework2.IContext.HandleMouseDown(homework2.PowerPointModal, homework2.Toolbar, double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>87</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>30 homework2.IContext.HandleMouseMove(homework2.PowerPointModal, homework2.Toolbar, double, double)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>30</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>homework2.IContext.HandleMouseMove(homework2.PowerPointModal, homework2.Toolbar, double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>88</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>35 homework2.IContext.HandleMouseUp(homework2.PowerPointModal, homework2.Toolbar, double, double)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>35</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>homework2.IContext.HandleMouseUp(homework2.PowerPointModal, homework2.Toolbar, double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>89</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>45 homework2.IState.SetContext(homework2.IContext)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>45</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>homework2.IState.SetContext(homework2.IContext)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>90</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>50 homework2.IState.HandleMouseDown(homework2.PowerPointModal, homework2.Toolbar, double, double)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>50</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>homework2.IState.HandleMouseDown(homework2.PowerPointModal, homework2.Toolbar, double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>91</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>51 homework2.IState.HandleMouseMove(homework2.PowerPointModal, homework2.Toolbar, double, double)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>51</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>homework2.IState.HandleMouseMove(homework2.PowerPointModal, homework2.Toolbar, double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>92</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>52 homework2.IState.HandleMouseUp(homework2.PowerPointModal, homework2.Toolbar, double, double)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>IState.cs</File>
+              <Line>52</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>homework2.IState.HandleMouseUp(homework2.PowerPointModal, homework2.Toolbar, double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>93</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>57 目前物件 homework2.PresentationModel，使用物件的方法或屬性次數：0次，Envy到對象物件 homework2.PowerPointModal，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：homework2.PowerPointModal._selectedShape 以及 homework2.PowerPointModal._selectedShape</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>C:\Users\Ray\Desktop\MVC_視窗程式設計\FactoryPattern_PowerPoint\homework2\PresentationModel.cs</File>
+              <Line>57</Line>
+              <StartLine>56</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>57</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 homework2.PresentationModel，使用物件的方法或屬性次數：0次，Envy到對象物件 homework2.PowerPointModal，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：homework2.PowerPointModal._selectedShape 以及 homework2.PowerPointModal._selectedShape</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>94</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>112 目前物件 homework2.PointState，使用物件的方法或屬性次數：0次，Envy到對象物件 homework2.PowerPointModal，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：homework2.PowerPointModal._shapes 以及 homework2.PowerPointModal.SelectShape(homework2.Shape)</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>C:\Users\Ray\Desktop\MVC_視窗程式設計\FactoryPattern_PowerPoint\homework2\IState.cs</File>
+              <Line>112</Line>
+              <StartLine>111</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>112</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 homework2.PointState，使用物件的方法或屬性次數：0次，Envy到對象物件 homework2.PowerPointModal，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：homework2.PowerPointModal._shapes 以及 homework2.PowerPointModal.SelectShape(homework2.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>95</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>118 目前物件 homework2.PointState，使用物件的方法或屬性次數：0次，Envy到對象物件 homework2.Shape，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：homework2.Shape.GetPosition(ref int, ref int, ref int, ref int) 以及 homework2.Shape.IsPointInsideShape(double, double)</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>C:\Users\Ray\Desktop\MVC_視窗程式設計\FactoryPattern_PowerPoint\homework2\IState.cs</File>
+              <Line>118</Line>
+              <StartLine>112</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>118</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 homework2.PointState，使用物件的方法或屬性次數：0次，Envy到對象物件 homework2.Shape，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：homework2.Shape.GetPosition(ref int, ref int, ref int, ref int) 以及 homework2.Shape.IsPointInsideShape(double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>96</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>160 目前物件 homework2.PointState，使用物件的方法或屬性次數：0次，Envy到對象物件 homework2.PowerPointModal，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：homework2.PowerPointModal._selectedShape 以及 homework2.PowerPointModal._selectedShape</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>homework2</Project>
+              <File>C:\Users\Ray\Desktop\MVC_視窗程式設計\FactoryPattern_PowerPoint\homework2\IState.cs</File>
+              <Line>160</Line>
+              <StartLine>154</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>160</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 homework2.PointState，使用物件的方法或屬性次數：0次，Envy到對象物件 homework2.PowerPointModal，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：homework2.PowerPointModal._selectedShape 以及 homework2.PowerPointModal._selectedShape</Comment>
+              <Auto>false</Auto>
+            </Smell>
+          </Reviews>
           <HashCodeIgnoreList />
           <HashCodeRequestIgnoreList />
           <AnalysisFileManager>
@@ -212,6 +1749,11 @@
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>IGraphics.cs</RelativePath>
+                <ProjectName>homework2</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>IState.cs</RelativePath>
                 <ProjectName>homework2</ProjectName>
                 <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
@@ -266,13 +1808,18 @@
                 <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
+                <RelativePath>Toolbar.cs</RelativePath>
+                <ProjectName>homework2</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
                 <RelativePath>WindowsFormsGraphicsAdaptor.cs</RelativePath>
                 <ProjectName>homework2</ProjectName>
                 <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>1098</ProductionLoc>
+          <ProductionLoc>1480</ProductionLoc>
           <TestLoc>0</TestLoc>
         </CodeReview>
       </Data>

@@ -32,6 +32,15 @@ namespace homework2
             _positionY2 = positionY2;
         }
 
+        // get position
+        public override void GetPosition(ref int positionX1, ref int positionY1, ref int positionX2, ref int positionY2)
+        {
+            positionX1 = _positionX1;
+            positionX2 = _positionX2;
+            positionY1 = _positionY1;
+            positionY2 = _positionY2;
+        }
+
         // get Position String Info 
         public override string GetInfo()
         {
@@ -54,6 +63,24 @@ namespace homework2
             int positionY = Math.Min(_positionY1, _positionY2);
 
             graphics.DrawRectangle(positionX, positionY, width, height);
+        }
+
+
+        // DrawSelectedBorder
+        public override void DrawSelectedBorder(IGraphics graphics)
+        {
+            graphics.DrawSelectedBorder(_positionX1, _positionY1, _positionX2, _positionY2);
+        }
+
+        // IsPointInsideShape
+        public override bool IsPointInsideShape(double positionX, double positionY)
+        {
+            int minX = Math.Min(_positionX1, _positionX2);
+            int maxX = Math.Max(_positionX1, _positionX2);
+            int minY = Math.Min(_positionY1, _positionY2);
+            int maxY = Math.Max(_positionY1, _positionY2);
+
+            return (positionX >= minX && positionX <= maxX) && (positionY >= minY && positionY <= maxY);
         }
     }
 }

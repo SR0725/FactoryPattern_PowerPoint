@@ -67,37 +67,53 @@ namespace homework2
         // handle line tool strip button click
         private void HandleLineToolStripButtonClick(object sender, EventArgs e)
         {
-            _presentationModel.ClickDrawButton(ShapeFactory.ShapeType.Line);
+            _presentationModel.SetToolbar(Toolbar.ToolbarType.Line);
             HandleChangeDrawButtonState();
         }
 
         // handle rectangle tool strip button click
         private void HandleRectangleToolStripButtonClick(object sender, EventArgs e)
         {
-            _presentationModel.ClickDrawButton(ShapeFactory.ShapeType.Rectangle);
+            _presentationModel.SetToolbar(Toolbar.ToolbarType.Rectangle);
             HandleChangeDrawButtonState();
         }
 
         // handle circle tool strip button click
         private void HandleCircleToolStripButtonClick(object sender, EventArgs e)
         {
-            _presentationModel.ClickDrawButton(ShapeFactory.ShapeType.Circle);
+            _presentationModel.SetToolbar(Toolbar.ToolbarType.Circle);
+            HandleChangeDrawButtonState();
+        }
+
+        // handle arrow tool strip button click
+        private void HandleArrowToolStripButtonClick(object sender, EventArgs e)
+        {
+            _presentationModel.SetToolbar(Toolbar.ToolbarType.PointState);
             HandleChangeDrawButtonState();
         }
 
         // handle canvas mouse down
         private void HandleChangeDrawButtonState()
         {
-            _lineToolStripButton.Checked = _presentationModel.GetDrawButtonCheckedType() == ShapeFactory.ShapeType.Line;
-            _rectangleToolStripButton.Checked = _presentationModel.GetDrawButtonCheckedType() == ShapeFactory.ShapeType.Rectangle;
-            _circleToolStripButton.Checked = _presentationModel.GetDrawButtonCheckedType() == ShapeFactory.ShapeType.Circle;
+            _lineToolStripButton.Checked = _presentationModel.toolbar.checkedType == Toolbar.ToolbarType.Line;
+            _rectangleToolStripButton.Checked = _presentationModel.toolbar.checkedType == Toolbar.ToolbarType.Rectangle;
+            _circleToolStripButton.Checked = _presentationModel.toolbar.checkedType == Toolbar.ToolbarType.Circle;
+            _arrowToolStripButton.Checked = _presentationModel.toolbar.checkedType == Toolbar.ToolbarType.PointState;
+        }
 
+        // handle key down
+        public void HandleKeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            if (e.KeyCode == System.Windows.Forms.Keys.Delete)
+            {
+                _presentationModel.DeleteSelectedShape();
+            }
         }
 
         // handle canvas mouse down
-        private void HandlePaintPointerDown(object sender, MouseEventArgs e)
+        private void HandleMouseDown(object sender, MouseEventArgs e)
         {
-            Shape workShape = _presentationModel.HandlePaintPointerDown(e.X, e.Y);
+            Shape workShape = _presentationModel.HandleMouseDown(e.X, e.Y);
 
             if (workShape != null)
             {
@@ -107,33 +123,33 @@ namespace homework2
         }
 
         // handle canvas mouse move
-        private void HandlePaintPointerMove(object sender, MouseEventArgs e)
+        private void HandleMouseMove(object sender, MouseEventArgs e)
         {
-            Shape workShape = _presentationModel.HandlePaintPointerMove(e.X, e.Y);
+            Shape workShape = _presentationModel.HandleMouseMove(e.X, e.Y);
             if (workShape != null)
             {
-                int lastShapesDataGridViewRowIndex = _shapesDataGridView.Rows.Count - 1;
+                int shapesDataGridViewRowIndex = _presentationModel.GetShapeIndex(workShape);
                 const int SECOND = 2;
-                _shapesDataGridView.Rows[lastShapesDataGridViewRowIndex].Cells[SECOND].Value = workShape.GetInfo();
+                _shapesDataGridView.Rows[shapesDataGridViewRowIndex].Cells[SECOND].Value = workShape.GetInfo();
             }
         }
 
         // handle canvas mouse up
-        private void HandlePaintPointerUp(object sender, MouseEventArgs e)
+        private void HandleMouseUp(object sender, MouseEventArgs e)
         {
-            Shape workShape = _presentationModel.HandlePaintPointerUp(e.X, e.Y);
+            Shape workShape = _presentationModel.HandleMouseUp(e.X, e.Y);
             if (workShape != null)
             {
-                int lastShapesDataGridViewRowIndex = _shapesDataGridView.Rows.Count - 1;
+                int shapesDataGridViewRowIndex = _presentationModel.GetShapeIndex(workShape);
                 const int SECOND = 2;
-                _shapesDataGridView.Rows[lastShapesDataGridViewRowIndex].Cells[SECOND].Value = workShape.GetInfo();
+                _shapesDataGridView.Rows[shapesDataGridViewRowIndex].Cells[SECOND].Value = workShape.GetInfo();
             }
         }
 
         // handle render panel mouse enter
         private void HandleRenderPanelMouseEnter(object sender, EventArgs e)
         {
-            if (_presentationModel.GetDrawButtonCheckedType() == ShapeFactory.ShapeType.None)
+            if (_presentationModel.toolbar.checkedType == Toolbar.ToolbarType.None)
             {
                 return;
             }
@@ -158,5 +174,6 @@ namespace homework2
                 Cursor = Cursors.Default;
             }
         }
+
     }
 }

@@ -32,6 +32,15 @@ namespace homework2
             _positionY2 = positionY2;
         }
 
+        // get position
+        public override void GetPosition(ref int positionX1, ref int positionY1, ref int positionX2, ref int positionY2)
+        {
+            positionX1 = _positionX1;
+            positionX2 = _positionX2;
+            positionY1 = _positionY1;
+            positionY2 = _positionY2;
+        }
+
         // get Position String Info 
         public override string GetInfo()
         {
@@ -54,6 +63,25 @@ namespace homework2
             int positionY = Math.Min(_positionY1, _positionY2);
 
             graphics.DrawEllipse(positionX, positionY, width, height);
+        }
+
+        // DrawSelectedBorder
+        public override void DrawSelectedBorder(IGraphics graphics)
+        {
+            graphics.DrawSelectedBorder(_positionX1, _positionY1, _positionX2, _positionY2);
+        }
+
+        // IsPointInsideShape
+        public override bool IsPointInsideShape(double positionX, double positionY)
+        {
+            double centerX = (_positionX1 + _positionX2) / 2.0;
+            double centerY = (_positionY1 + _positionY2) / 2.0;
+
+            double radius = Math.Sqrt(Math.Pow(_positionX2 - _positionX1, 2) + Math.Pow(_positionY2 - _positionY1, 2)) / 2.0;
+
+            double distance = Math.Sqrt(Math.Pow(positionX - centerX, 2) + Math.Pow(positionY - centerY, 2));
+
+            return distance <= radius;
         }
     }
 }
