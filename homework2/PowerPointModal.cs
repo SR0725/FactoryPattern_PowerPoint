@@ -10,11 +10,17 @@ namespace homework2
     {
         public delegate void ModelChangedEventHandler();
         public event ModelChangedEventHandler _modelChanged;
-        public Shape _selectedShape;
         private Shape _workShape;
         private double _firstPointX;
         private double _firstPointY;
-        private IContext context = new IContext(new DrawingState());
+        private IContext _context = new IContext(new DrawingState());
+
+        // selectedShape
+        public Shape SelectedShape
+        {
+            get;
+            set;
+        }
 
         // shapes
         public List<Shape> _shapes
@@ -56,49 +62,49 @@ namespace homework2
         }
 
         // handle change context
-        public void HandleChangeContext(Toolbar toolbar)
+        public void HandleChangeContext(ToolBar toolBar)
         {
-            switch (toolbar.checkedType)
+            switch (toolBar.checkedType)
             {
-                case Toolbar.ToolbarType.PointState:
-                    context.TransitionTo(new PointState());
+                case ToolBar.ToolBarType.PointState:
+                    _context.SetState(new PointState());
                     break;
-                case Toolbar.ToolbarType.Circle:
-                case Toolbar.ToolbarType.Line:
-                case Toolbar.ToolbarType.Rectangle:
-                    context.TransitionTo(new DrawingState());
+                case ToolBar.ToolBarType.Circle:
+                case ToolBar.ToolBarType.Line:
+                case ToolBar.ToolBarType.Rectangle:
+                    _context.SetState(new DrawingState());
                     break;
             }
         }
 
         // mouse down
-        public Shape HandleMouseDown(Toolbar toolbar, double positionX, double positionY)
+        public Shape HandleMouseDown(ToolBar toolBar, double positionX, double positionY)
         {
-            return context.HandleMouseDown(this, toolbar, positionX, positionY);
+            return _context.HandleMouseDown(this, toolBar, positionX, positionY);
         }
 
         // mouse move
-        public Shape HandleMouseMove(Toolbar toolbar, double positionX, double positionY)
+        public Shape HandleMouseMove(ToolBar toolBar, double positionX, double positionY)
         {
-            return context.HandleMouseMove(this, toolbar, positionX, positionY);
+            return _context.HandleMouseMove(this, toolBar, positionX, positionY);
         }
 
         // mouse up
-        public Shape HandleMouseUp(Toolbar toolbar, double positionX, double positionY)
+        public Shape HandleMouseUp(ToolBar toolBar, double positionX, double positionY)
         {
-            return context.HandleMouseUp(this, toolbar, positionX, positionY);
+            return _context.HandleMouseUp(this, toolBar, positionX, positionY);
         }
 
         // delete selected shape
         public void DeleteSelectedShape()
         {
-            if (_selectedShape == null)
+            if (SelectedShape == null)
             {
                 return;
             }
 
-            _shapes.Remove(_selectedShape);
-            _selectedShape = null;
+            _shapes.Remove(SelectedShape);
+            SelectedShape = null;
             NotifyModelChanged();
         }
 
@@ -148,12 +154,12 @@ namespace homework2
         // MoveSelectedShape
         public void MoveSelectedShape(int positionX1, int positionY1, int positionX2, int positionY2)
         {
-            if (_selectedShape == null)
+            if (SelectedShape == null)
             {
                 return;
             }
 
-            _selectedShape.SetPosition(
+            SelectedShape.SetPosition(
                 positionX1,
                 positionY1,
                 positionX2,
@@ -165,7 +171,7 @@ namespace homework2
         // select shape
         public void SelectShape(Shape shape)
         {
-            _selectedShape = shape;
+            SelectedShape = shape;
             NotifyModelChanged();
         }
 

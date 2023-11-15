@@ -30,9 +30,7 @@ namespace homework2
         private void InitializeComponent()
         {
             this._slideSelectionArea = new System.Windows.Forms.Panel();
-            this._slider2 = new System.Windows.Forms.Button();
-            this._slider1 = new System.Windows.Forms.Button();
-            this._renderPanel = new homework2.DoubleBufferedPanel();
+            this._childPanel = new System.Windows.Forms.Panel();
             this._slideInfoArea = new System.Windows.Forms.GroupBox();
             this._addNewShapeSelector = new System.Windows.Forms.ComboBox();
             this._addNewShapeButton = new System.Windows.Forms.Button();
@@ -50,6 +48,7 @@ namespace homework2
             this._rectangleToolStripButton = new System.Windows.Forms.ToolStripButton();
             this._circleToolStripButton = new System.Windows.Forms.ToolStripButton();
             this._arrowToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this._renderPanel = new homework2.DoubleBufferedPanel();
             this._slideSelectionArea.SuspendLayout();
             this._slideInfoArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._shapesDataGridView)).BeginInit();
@@ -62,41 +61,20 @@ namespace homework2
             // _slideSelectionArea
             // 
             this._slideSelectionArea.BackColor = System.Drawing.SystemColors.ControlDark;
-            this._slideSelectionArea.Controls.Add(this._slider2);
-            this._slideSelectionArea.Controls.Add(this._slider1);
+            this._slideSelectionArea.Controls.Add(this._childPanel);
             this._slideSelectionArea.Location = new System.Drawing.Point(0, 48);
             this._slideSelectionArea.Name = "_slideSelectionArea";
             this._slideSelectionArea.Size = new System.Drawing.Size(171, 728);
             this._slideSelectionArea.TabIndex = 1;
             // 
-            // _slider2
+            // _childPanel
             // 
-            this._slider2.Location = new System.Drawing.Point(8, 105);
-            this._slider2.Name = "_slider2";
-            this._slider2.Size = new System.Drawing.Size(152, 78);
-            this._slider2.TabIndex = 1;
-            this._slider2.UseVisualStyleBackColor = true;
-            // 
-            // _slider1
-            // 
-            this._slider1.Location = new System.Drawing.Point(7, 9);
-            this._slider1.Name = "_slider1";
-            this._slider1.Size = new System.Drawing.Size(154, 82);
-            this._slider1.TabIndex = 0;
-            this._slider1.UseVisualStyleBackColor = true;
-            // 
-            // _renderPanel
-            // 
-            this._renderPanel.Location = new System.Drawing.Point(167, 48);
-            this._renderPanel.Name = "_renderPanel";
-            this._renderPanel.Size = new System.Drawing.Size(1009, 674);
-            this._renderPanel.TabIndex = 4;
-            this._renderPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HandleCanvasPaint);
-            this._renderPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HandleMouseDown);
-            this._renderPanel.MouseEnter += new System.EventHandler(this.HandleRenderPanelMouseEnter);
-            this._renderPanel.MouseLeave += new System.EventHandler(this.HandleRenderPanelMouseLeave);
-            this._renderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HandleMouseMove);
-            this._renderPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.HandleMouseUp);
+            this._childPanel.BackColor = System.Drawing.SystemColors.Control;
+            this._childPanel.Location = new System.Drawing.Point(4, 9);
+            this._childPanel.Name = "_childPanel";
+            this._childPanel.Size = new System.Drawing.Size(157, 87);
+            this._childPanel.TabIndex = 0;
+            this._childPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HandleChildCanvasPaint);
             // 
             // _slideInfoArea
             // 
@@ -265,6 +243,19 @@ namespace homework2
             this._arrowToolStripButton.Text = "toolStripButton1";
             this._arrowToolStripButton.Click += new System.EventHandler(this.HandleArrowToolStripButtonClick);
             // 
+            // _renderPanel
+            // 
+            this._renderPanel.Location = new System.Drawing.Point(167, 48);
+            this._renderPanel.Name = "_renderPanel";
+            this._renderPanel.Size = new System.Drawing.Size(1009, 674);
+            this._renderPanel.TabIndex = 4;
+            this._renderPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HandleCanvasPaint);
+            this._renderPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HandleMouseDown);
+            this._renderPanel.MouseEnter += new System.EventHandler(this.HandleRenderPanelMouseEnter);
+            this._renderPanel.MouseLeave += new System.EventHandler(this.HandleRenderPanelMouseLeave);
+            this._renderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HandleMouseMove);
+            this._renderPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.HandleMouseUp);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -275,10 +266,10 @@ namespace homework2
             this.Controls.Add(this._renderPanel);
             this.Controls.Add(this._slideSelectionArea);
             this.Controls.Add(this._slideInfoArea);
+            this.KeyPreview = true;
             this.MainMenuStrip = this._headMenu;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.KeyPreview = true;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HandleKeyDown);
             this._slideSelectionArea.ResumeLayout(false);
             this._slideInfoArea.ResumeLayout(false);
@@ -297,8 +288,6 @@ namespace homework2
 
         #endregion
         private System.Windows.Forms.Panel _slideSelectionArea;
-        private System.Windows.Forms.Button _slider2;
-        private System.Windows.Forms.Button _slider1;
         private DoubleBufferedPanel _renderPanel;
         private System.Windows.Forms.GroupBox _slideInfoArea;
         private System.Windows.Forms.ComboBox _addNewShapeSelector;
@@ -317,6 +306,7 @@ namespace homework2
         private System.Windows.Forms.ToolStripButton _rectangleToolStripButton;
         private System.Windows.Forms.ToolStripButton _circleToolStripButton;
         private System.Windows.Forms.ToolStripButton _arrowToolStripButton;
+        private System.Windows.Forms.Panel _childPanel;
     }
 }
 

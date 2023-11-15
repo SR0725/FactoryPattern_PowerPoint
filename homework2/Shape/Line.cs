@@ -61,17 +61,18 @@ namespace homework2
             graphics.DrawSelectedBorder(_positionX1, _positionY1, _positionX2, _positionY2);
         }
 
-
         // IsPointInsideShape
         public override bool IsPointInsideShape(double positionX, double positionY)
         {
-            double lineLength = Math.Sqrt(Math.Pow(_positionX2 - _positionX1, 2) + Math.Pow(_positionY2 - _positionY1, 2));
+            const int SQUARE = 2;
 
-            double distanceToFirstPoint = Math.Sqrt(Math.Pow(positionX - _positionX1, 2) + Math.Pow(positionY - _positionY1, 2));
-            double distanceToSecondPoint = Math.Sqrt(Math.Pow(positionX - _positionX2, 2) + Math.Pow(positionY - _positionY2, 2));
+            double lineLength = Math.Sqrt(Math.Pow(_positionX2 - _positionX1, SQUARE) + Math.Pow(_positionY2 - _positionY1, SQUARE));
 
-            double epsilon = 1e-6; 
-            return Math.Abs(distanceToFirstPoint + distanceToSecondPoint - lineLength) < epsilon;
+            double distanceToFirstPoint = Math.Sqrt(Math.Pow(positionX - _positionX1, SQUARE) + Math.Pow(positionY - _positionY1, SQUARE));
+            double distanceToSecondPoint = Math.Sqrt(Math.Pow(positionX - _positionX2, SQUARE) + Math.Pow(positionY - _positionY2, SQUARE));
+
+            const double MIN_DISTANCE = 10; 
+            return Math.Abs(distanceToFirstPoint + distanceToSecondPoint - lineLength) < MIN_DISTANCE;
         }
     }
 }

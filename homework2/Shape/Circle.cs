@@ -74,12 +74,14 @@ namespace homework2
         // IsPointInsideShape
         public override bool IsPointInsideShape(double positionX, double positionY)
         {
-            double centerX = (_positionX1 + _positionX2) / 2.0;
-            double centerY = (_positionY1 + _positionY2) / 2.0;
+            const double HALF = 0.5;
+            const int SQUARE = 2;
+            double centerX = (_positionX1 + _positionX2) * HALF;
+            double centerY = (_positionY1 + _positionY2) * HALF;
 
-            double radius = Math.Sqrt(Math.Pow(_positionX2 - _positionX1, 2) + Math.Pow(_positionY2 - _positionY1, 2)) / 2.0;
+            double radius = Math.Sqrt(Math.Pow(_positionX2 - _positionX1, SQUARE) + Math.Pow(_positionY2 - _positionY1, SQUARE)) * HALF;
 
-            double distance = Math.Sqrt(Math.Pow(positionX - centerX, 2) + Math.Pow(positionY - centerY, 2));
+            double distance = Math.Sqrt(Math.Pow(positionX - centerX, SQUARE) + Math.Pow(positionY - centerY, SQUARE));
 
             return distance <= radius;
         }

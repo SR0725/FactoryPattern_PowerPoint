@@ -2,7 +2,7 @@
 
 namespace homework2
 {
-    public class Toolbar : INotifyPropertyChanged
+    public class ToolBar : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         const int NONE = -1;
@@ -10,27 +10,31 @@ namespace homework2
         const int LINE = 1;
         const int CIRCLE = 2;
         const int POINT_STATE = 3;
-        public enum ToolbarType : int
+        public enum ToolBarType : int
         {
             None = NONE,
             Rectangle = RECTANGLE,
             Line = LINE,
             Circle = CIRCLE,
-            PointState = POINT_STATE,
+            PointState = POINT_STATE
         }
-        private ToolbarType _checkedType = ToolbarType.None;
+        private ToolBarType _checkedType = ToolBarType.None;
 
-        public Toolbar()
+        public ToolBar()
         {
         }
 
-        public ToolbarType checkedType
+        public ToolBarType checkedType
         {
-            get { return this._checkedType; }
+            get 
+            { 
+                return this._checkedType; 
+            }
             set
             {
                 this._checkedType = value;
-                NotifyPropertyChanged("ButtonCheck");
+                const string EVENT_NAME = "ButtonCheck";
+                NotifyPropertyChanged(EVENT_NAME);
             }
         }
 

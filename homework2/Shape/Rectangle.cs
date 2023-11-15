@@ -65,7 +65,6 @@ namespace homework2
             graphics.DrawRectangle(positionX, positionY, width, height);
         }
 
-
         // DrawSelectedBorder
         public override void DrawSelectedBorder(IGraphics graphics)
         {

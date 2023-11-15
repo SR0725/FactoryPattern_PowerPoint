@@ -46,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IContext.cs" />
+    <Compile Include="DrawingState.cs" />
+    <Compile Include="PointState.cs" />
     <Compile Include="IState.cs" />
-    <Compile Include="Toolbar.cs" />
+    <Compile Include="ToolBar.cs" />
     <Compile Include="WindowsFormsGraphicsAdaptor.cs" />
     <Compile Include="IGraphics.cs" />
     <Compile Include="DoubleBufferedPanel.cs">
